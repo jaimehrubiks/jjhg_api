@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jjhg-api-deployment
+  labels:
+    app: jjhg-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: jjhg-api
+  template:
+    metadata:
+      labels:
+        app: jjhg-api
+    spec:
+      containers:
+      - name: jjhg-api
+        image: jjhidalgar/jjhg_api:v1.0.0
+        ports:
+        - containerPort: 4000
