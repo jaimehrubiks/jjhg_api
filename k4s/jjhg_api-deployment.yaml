@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: jjhg-api
-        image: jjhidalgar/jjhg_api:v1.0.0
+        image: jjhidalgar/jjhg_api:v1.0.1
         ports:
         - containerPort: 4000

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jjhg-api-service-clusterip
+spec:
+  selector:
+    app: jjhg-api
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 4000
