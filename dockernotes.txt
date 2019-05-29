@@ -1,0 +1,10 @@
+# Building + changes
+docker build -t jjhidalgar/jjhg_api .
+
+# Running
+# - Note that we expose 4000 port to allow docker to find this port, but
+#   we expose port 4000 (left) of the host, to forward local 4000 to container 4000
+docker run -p 4000:4000 -d jjhidalgar/jjhg_api
+
+
+
