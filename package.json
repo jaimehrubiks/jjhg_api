@@ -1,6 +1,6 @@
 {
   "name": "jjhg_api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rest API for testing",
   "main": "index.js",
   "scripts": {
