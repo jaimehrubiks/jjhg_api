@@ -13,3 +13,7 @@ docker exec -it 116d92821cfd /bin/bash
 docker build -t jjhidalgar/jjhg_api:v1.0.0 ./
 docker push jjhidalgar/jjhg_api:v1.0.0
 
+# Tagging other option
+docker build -t jjhidalgar/jjhg_api ./
+docker tag jjhidalgar/jjhg_api jjhidalgar/jjhg_api:v1.0.1
+docker push jjhidalgar/jjhg_api
